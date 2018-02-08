@@ -46,6 +46,7 @@ p {
   min-height: 450px;
   color: #fff;
   text-align: center;
+  overflow:hidden;
 }
 
 #showcase .bg-image{
@@ -55,7 +56,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: inherit;
+  height: 600px;
   z-index:-1;
   opacity: 0.4;
 }
