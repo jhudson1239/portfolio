@@ -5,7 +5,20 @@
     <title>Sorry</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="master.css">
+
+    <link rel="stylesheet" href="css/master.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/category.js"></script>
+    <script>
+      function scroll_to_div(div_id)
+      {
+       $('html,body').animate(
+       {
+        scrollTop: $("#"+div_id).offset().top
+       },'slow');
+      }
+    </script>
   </head>
   <body>
       <div class="wrapper">
@@ -16,7 +29,7 @@
           <div id="type">
             <h1>Web applications</h1>
           </div>
-          <div id="more">
+          <div id="more" onclick="scroll_to_div('project-title')">
             <p>Find out what I've done</p>
             <img src="images/down-arrow.png" alt="">
           </div>
@@ -51,41 +64,24 @@
           <div id="project-title">
             <h1>Personal Projects</h1>
           </div>
+          <div class="project_categories">
+            <p class="category_item" id='all'>All</p>
+            <p class="category_item" id='laravel'>Laravel</p>
+            <p class="category_item" id='ember'>EmberJS</p>
+            <p class="category_item" id='js'>Javascript</p>
+            <div class="holder">
+              <a href="/projects/gigaweb-solutions/index.html"><img src="images/camping.png" class="project laravel" alt=""></a>
+              <img src="images/camping.png" class="project laravel" alt="">
+              <img src="images/camping.png" class="project ember" alt="">
+              <img src="images/camping.png" class="project js" alt="">
+              <img src="images/camping.png" class="project laravel" alt="">
+              <img src="images/camping.png" class="project laravel" alt="">
+              <img src="images/camping.png" class="project ember" alt="">
+              <img src="images/camping.png" class="project js" alt="">
+            </div>
 
-          <div id="project-wrapper">
-            <div class="project">
-              <img src="images/books.png" alt=""><br>
-              <h2>Project Sivir</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </div>
-            <div class="project">
-              <img src="images/camping.png" alt=""><br>
-              <h2>Project Azir</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </div>
-            <div class="project">
-              <img src="images/cloud-computing.png" alt=""><br>
-              <h2>Project Taric</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </div>
-            <div class="project">
-              <img src="images/lamp.png" alt=""><br>
-              <h2>Project Varus</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </div>
-            <div class="project">
-              <img src="images/paint.png" alt=""><br>
-              <h2>Project Nasus</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </div>
-            <div class="project">
-              <img src="images/shuffle.png" alt=""><br>
-              <h2>Project Jhin</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-            </div>
           </div>
         </div>
-
         <div id="footer">
           <h2>Available for hire</h2> <br>
           <button type="button" name="button"><a href="#">Get Started</a></button>
