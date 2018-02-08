@@ -20,13 +20,15 @@
   grid-column: 2;
   width: 30%;
   margin: 3em auto;
+  border: 2px #2C2E3C solid;
+  border-radius: 15px;
 }
 
 #showcase-title{
-  grid-column: 2;
+  grid-column: 1/4;
   grid-row: 5;
   color:white;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 #showcase button{
@@ -48,4 +50,5 @@
   grid-row: 12;
   color:white;
   font-size: 3em;
+  cursor: pointer;
 }
