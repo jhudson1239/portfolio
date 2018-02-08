@@ -47,6 +47,7 @@ p {
   color: #fff;
   text-align: center;
   overflow:hidden;
+  padding-bottom: 3em;
 }
 
 #showcase .bg-image{
