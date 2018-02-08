@@ -28,8 +28,34 @@ body{
 }
 
 #showcase h1 {
-  padding-top: 120px;
+  padding-top: 50px ;
   padding-bottom: 0;
   color:#fff;
   font-size: 2em;
+}
+
+#showcase #logo{
+  width:100px;
+  padding-top: 50px;
+}
+
+#showcase button{
+  background: transparent;
+  text-decoration: none;
+  border: 3px solid #2C2E3C;
+  padding: 20px 30px;
+  border-radius: 15px;
+  color:white;
+  font-size: 1em;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all .2s ease-in;
+}
+
+#showcase button:hover{
+  background: #2C2E3C;
+}
+
+#showcase p{
+
 }
