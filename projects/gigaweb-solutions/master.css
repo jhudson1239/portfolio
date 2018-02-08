@@ -55,7 +55,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: minmax(450px,auto);
+  min-height: 450px;
   z-index:-1;
   opacity: 0.4;
 }
