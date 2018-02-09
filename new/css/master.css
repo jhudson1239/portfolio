@@ -7,7 +7,7 @@
 
 #showcase{
   height: 100vh;
-  background-image: url(../images/banner.jpg);
+  background: #333 url(../images/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
