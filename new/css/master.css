@@ -2,53 +2,19 @@
   margin:0;
   padding:0;
   text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #showcase{
   height: 100vh;
-  background-image: url(../images/mobile-background.jpg);
+  background-image: url(../images/banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: repeat(12,1fr);
+  grid-template-columns:1fr 4fr 1fr; 
 }
 
-
-#showcase #logo{
-  grid-column: 2;
-  width: 30%;
-  margin: 3em auto;
-  border: 2px #2C2E3C solid;
-  border-radius: 15px;
-}
-
-#showcase-title{
-  grid-column: 1/4;
-  grid-row: 5;
-  color:white;
-  font-size: 4em;
-}
-
-#showcase button{
-  grid-column: 2;
-  grid-row: 7;
-  width:70%;
-  height:70%;
-  margin: 0 auto;
-  background: #2C2E3C;
-  border: #2C2E3C 2px solid;
-  border-radius: 15px;
-  color:white;
-  font-size: 2em;
-}
-
-
-#showcase-more{
-  grid-column: 2;
-  grid-row: 12;
-  color:white;
-  font-size: 3em;
-  cursor: pointer;
+#showcase-content{
+  color:#fff;
 }
