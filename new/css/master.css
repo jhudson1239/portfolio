@@ -11,6 +11,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333;
   display: grid;
   grid-template-columns:1fr 4fr 1fr;
   grid-template-rows: repeat(5, 1fr);
