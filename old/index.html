@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>J|Hudson</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/master.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/category.js"></script>
+    <script>
+      function scroll_to_div(div_id)
+      {
+       $('html,body').animate(
+       {
+        scrollTop: $("#"+div_id).offset().top
+       },'slow');
+      }
+    </script>
+  </head>
+  <body>
+      <div class="wrapper">
+        <div id="banner">
+          <div id="title1">
+            <h1>Hi, I'm Joshua. I design and build.</h1>
+          </div>
+          <div id="type">
+            <h1>Web applications</h1>
+          </div>
+          <div id="more" onclick="scroll_to_div('project-title')">
+            <p>Find out what I've done</p>
+            <img src="images/down-arrow.png" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section B -->
+      <section id="section-b">
+        <h2>My Skills</h2>
+        <ul>
+          <li>
+            <img src="images/001-mobile.png" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Coding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illum laudantium, cum dolorum, provident molestiae quasi possimus doloribus voluptas sed.</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/002-settings.png" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Frameworks</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illum laudantium, cum dolorum, provident molestiae quasi possimus doloribus voluptas sed.</p>
+            </div>
+          </li>
+          <li>
+            <img src="images/003-responsive.png" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Responsive Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illum laudantium, cum dolorum, provident molestiae quasi possimus doloribus voluptas sed.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+        <div id="projects">
+          <div id="project-title">
+            <h1>Personal Projects</h1>
+          </div>
+          <div class="project_categories">
+            <p class="category_item" id='all'>All</p>
+            <p class="category_item" id='laravel'>Laravel</p>
+            <p class="category_item" id='ember'>EmberJS</p>
+            <p class="category_item" id='js'>Javascript</p>
+            <div class="holder">
+              <a target="_blank" href="/projects/gigaweb-solutions/index.html"><img src="images/complete.png" class="project laravel" alt=""></a>
+              <img src="images/complete.png" class="project laravel" alt="">
+              <img src="images/complete.png" class="project ember" alt="">
+              <img src="images/complete.png" class="project js" alt="">
+              <img src="images/complete.png" class="project laravel" alt="">
+              <img src="images/complete.png" class="project laravel" alt="">
+              <img src="images/complete.png" class="project ember" alt="">
+              <img src="images/complete.png" class="project js" alt="">
+            </div>
+
+          </div>
+        </div>
+        <div id="footer">
+          <h2>Available for hire</h2> <br>
+          <button type="button" name="button"><a href="/new">Get Started</a></button>
+        </div>
+  </body>
+</html>

@@ -2,93 +2,93 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>J|Hudson</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:300,400" rel="stylesheet">
-
+    <title>Verson 2</title>
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/master.css">
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/category.js"></script>
-    <script>
-      function scroll_to_div(div_id)
-      {
-       $('html,body').animate(
-       {
-        scrollTop: $("#"+div_id).offset().top
-       },'slow');
-      }
-    </script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
   </head>
   <body>
-      <div class="wrapper">
-        <div id="banner">
-          <div id="title1">
-            <h1>Hi, I'm Joshua. I design and build.</h1>
-          </div>
-          <div id="type">
-            <h1>Web applications</h1>
-          </div>
-          <div id="more" onclick="scroll_to_div('project-title')">
-            <p>Find out what I've done</p>
-            <img src="images/down-arrow.png" alt="">
-          </div>
+    <header>
+      <div id="showcase">
+        <div id="bg-image"></div>
+        <div id="showcase-content">
+          <h1 id="showcase-title">Welcome to the site guys.</h1>
+          <button type="button" name="button">I'm available for hire.</button>
+        </div>
+        <div id="project-link">
+          <p>Lets see the work I've done</p>
         </div>
       </div>
+    </header>
 
-      <!-- Section B -->
-      <section id="section-b">
-        <h2>My Skills</h2>
+    <main>
+      <!-- Section A -->
+      <section id="section-a">
+        <h1>Expertise</h1>
+        <p>Just a few of my skills ... </p>
         <ul>
           <li>
-            <img src="images/001-mobile.png" alt="">
-            <div class="card-content">
-              <h3 class="card-title">Coding</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illum laudantium, cum dolorum, provident molestiae quasi possimus doloribus voluptas sed.</p>
+            <div class="card" id="card-1">
+              <img class="card-img" src="images/001-mobile.png" alt="">
+              <div class="card-content">
+                <h2>Coding</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, totam! Magni culpa dolorem consequuntur accusamus et ratione corporis repellendus. Ab.</p>
+              </div>
             </div>
           </li>
           <li>
-            <img src="images/002-settings.png" alt="">
-            <div class="card-content">
-              <h3 class="card-title">Frameworks</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illum laudantium, cum dolorum, provident molestiae quasi possimus doloribus voluptas sed.</p>
+            <div class="card" id="card-2">
+              <img class="card-img" src="images/002-settings.png" alt="">
+              <div class="card-content">
+                <h2>Frameworks</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, totam! Magni culpa dolorem consequuntur accusamus et ratione corporis repellendus. Ab.</p>
+              </div>
             </div>
           </li>
-          <li>
-            <img src="images/003-responsive.png" alt="">
-            <div class="card-content">
-              <h3 class="card-title">Responsive Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis illum laudantium, cum dolorum, provident molestiae quasi possimus doloribus voluptas sed.</p>
+          <li style="margin-bottom:10px;">
+            <div class="card" id="card-3">
+              <img class="card-img" src="images/003-responsive.png" alt="">
+              <div class="card-content">
+                <h2>Responsive Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, totam! Magni culpa dolorem consequuntur accusamus et ratione corporis repellendus. Ab.</p>
+              </div>
             </div>
           </li>
         </ul>
       </section>
 
-        <div id="projects">
-          <div id="project-title">
-            <h1>Personal Projects</h1>
+      <!-- Section B -->
+      <section id="section-b">
+        <h1>Personal Projects</h1>
+        <p>Here are a few projects I have worked on over the years. Some where driven by University and others just for fun.</p>
+        <div id="project-wrapper">
+          <div class="project-card">
+            <img src="images/complete.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis beatae excepturi optio, repudiandae harum fugiat laborum, eius modi commodi.</p>
           </div>
-          <div class="project_categories">
-            <p class="category_item" id='all'>All</p>
-            <p class="category_item" id='laravel'>Laravel</p>
-            <p class="category_item" id='ember'>EmberJS</p>
-            <p class="category_item" id='js'>Javascript</p>
-            <div class="holder">
-              <a target="_blank" href="/projects/gigaweb-solutions/index.html"><img src="images/complete.png" class="project laravel" alt=""></a>
-              <img src="images/complete.png" class="project laravel" alt="">
-              <img src="images/complete.png" class="project ember" alt="">
-              <img src="images/complete.png" class="project js" alt="">
-              <img src="images/complete.png" class="project laravel" alt="">
-              <img src="images/complete.png" class="project laravel" alt="">
-              <img src="images/complete.png" class="project ember" alt="">
-              <img src="images/complete.png" class="project js" alt="">
-            </div>
+          <div class="project-card">
+            <img src="images/complete.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis beatae excepturi optio, repudiandae harum fugiat laborum, eius modi commodi.</p>
+          </div>
+          <div class="project-card">
+            <img src="images/complete.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis beatae excepturi optio, repudiandae harum fugiat laborum, eius modi commodi.</p>
+          </div>
+          <div class="project-card">
+            <img src="images/complete.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quis beatae excepturi optio, repudiandae harum fugiat laborum, eius modi commodi.</p>
+          </div>
+        </div>
+      </section>
 
-          </div>
-        </div>
-        <div id="footer">
-          <h2>Available for hire</h2> <br>
-          <button type="button" name="button"><a href="/new">Get Started</a></button>
-        </div>
+      <!--Section C -->
+      <section id="section-c">
+        <footer>
+          <p>Created by: Joshua Hudson</p>
+          <button type="button" name="button">Contact Me</button>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>
