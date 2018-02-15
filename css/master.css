@@ -7,7 +7,7 @@
 
 #showcase{
   height: 100vh;
-  background-image: url(../images/banner.jpg);
+  background: #333;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,11 +26,11 @@
 }
 
 #showcase-content #showcase-title{
-  font-size: 5em;
+  font-size: 4em;
 }
 
 #showcase button{
-  width:60%;
+  width:80%;
   height:20%;
   font-size: 2em;
   background:#ecb939;
@@ -40,11 +40,6 @@
   transition: all 0.3s ease-in-out;
   cursor:pointer;
   margin-top:1em;
-}
-
-#showcase button:hover{
-
-  width:75%;
 }
 
 #project-link{
@@ -107,9 +102,9 @@
 }
 
 #section-b p{
-  font-size: 2.5em;
+  font-size:1.25em;
   width:80%;
-  margin:auto;
+  margin:1em auto;
   padding:0 1em 0 1em;
 }
 
@@ -126,13 +121,26 @@ footer {
 }
 
 @media(min-width: 750px) {
+  #showcase{
+    background-image: url('../images/banner.jpg');
+  }
+
   #showcase button{
-    width:40%;
-    height:2em;
+    width: 40%;
+    height:40%;
+    font-size: 2em;
+    background:#ecb939;
+    color:#333;
+    border: #ecb939 2px solid;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor:pointer;
+    margin-top:1em;
   }
 
   #showcase button:hover{
-    width: 45%;
+
+    width:50%;
   }
 
   #section-a{
