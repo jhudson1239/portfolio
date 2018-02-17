@@ -9,10 +9,22 @@
     <link rel="stylesheet" href="css/master.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Pop Notification from SweetAlert -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript">
       window.onload = function(){
         swal("Please Read!", "This Portfolio website is currently under construction. It does not currently represent my skills and is being hosted using netlify and is connected to my git repo. Every commit I make updates this website and that is the reason it is currenly a mess. It will hopefully be completed by March, im currently trying to find the time between Univeristy and my Part Time job to complete it.");
+      }
+
+      function scroll_to_div(div_id)
+      {
+       $('html,body').animate(
+       {
+        scrollTop: $("#"+div_id).offset().top
+       },'slow');
       }
     </script>
   </head>
@@ -22,10 +34,11 @@
         <div id="bg-image"></div>
         <div id="showcase-content">
           <h1 id="showcase-title">Welcome to the site guys.</h1>
-          <button type="button" name="button">I'm available for hire.</button>
+          <button type="button" name="button">Available to hire.</button>
         </div>
-        <div id="project-link">
+        <div id="project-link" onclick="scroll_to_div('section-b')">
           <p>Lets see the work I've done</p>
+          <i class="fa fa-angle-down"></i>
         </div>
       </div>
     </header>
